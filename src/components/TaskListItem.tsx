@@ -1,10 +1,8 @@
-import React from "react";
-
 export type TaskItem = {
-  title: string;
-  date: string;
-};
+  title: string
+  date: string
+}
 
-type Props = TaskItem;
+type Props = TaskItem
 
-export const TaskListItem: React.FC<Props> = ({ title, date }) => <></>;
+export const TaskListItem: React.FC<Props> = ({ title, date }) => <></>

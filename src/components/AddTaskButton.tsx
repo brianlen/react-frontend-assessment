@@ -1,7 +1,5 @@
-import * as React from "react";
-
 type Props = {
-  toggleModal: () => void;
-};
+  toggleModal: () => void
+}
 
-export const AddTaskButton: React.FC<Props> = ({ toggleModal }) => <></>;
+export const AddTaskButton: React.FC<Props> = ({ toggleModal }) => <></>

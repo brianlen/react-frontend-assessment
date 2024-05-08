@@ -1,7 +1,7 @@
-import { TaskItem } from "./TaskListItem";
+import { TaskItem } from './TaskListItem'
 
 type Props = {
-  tasks: TaskItem[];
-};
+  tasks: TaskItem[]
+}
 
-export const TaskList: React.FC<Props> = ({ tasks }) => <></>;
+export const TaskList: React.FC<Props> = ({ tasks }) => <></>
