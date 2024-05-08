@@ -12,7 +12,7 @@ describe('Add Task Modal', () => {
   })
 
   // TODO: Step 6
-  it.skip('allows a user to fill in a task title in the Task Title input', async () => {
+  it('allows a user to fill in a task title in the Task Title input', async () => {
     const inputElement = screen.getByLabelText('Task Title') as HTMLInputElement
 
     await userEvent.type(inputElement, 'Testing')
