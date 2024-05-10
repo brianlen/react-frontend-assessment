@@ -11,7 +11,7 @@ describe('Add Task Modal', () => {
     render(<AddTaskModal onSubmit={mockOnSubmit} closeModal={mockCloseModal} />)
   })
 
-  // TODO: Step 6
+  // TODO: Step 6. Done.
   it('allows a user to fill in a task title in the Task Title input', async () => {
     const inputElement = screen.getByLabelText('Task Title') as HTMLInputElement
 
@@ -20,13 +20,13 @@ describe('Add Task Modal', () => {
     expect(inputElement).toHaveValue('Testing')
   })
 
-  // TODO: Step 7
-  it.skip('disables the submit button if required fields are not filled', async () => {
+  // TODO: Step 7. Done.
+  it('disables the submit button if required fields are not filled', async () => {
     expect(screen.getByText('Submit')).toBeDisabled()
   })
 
-  // TODO: Step 8
-  it.skip('enables submit button if required fields are provided', async () => {
+  // TODO: Step 8. Done.
+  it('enables submit button if required fields are provided', async () => {
     const titleInput = screen.getByLabelText('Task Title') as HTMLInputElement
 
     await userEvent.type(titleInput, 'Test Title')
@@ -35,8 +35,8 @@ describe('Add Task Modal', () => {
     expect(screen.getByText('Submit')).not.toBeDisabled()
   })
 
-  // TODO: Step 9
-  it.skip('calls onSubmit with the proper input values when Submit is clicked', async () => {
+  // TODO: Step 9. Done.
+  it('calls onSubmit with the proper input values when Submit is clicked', async () => {
     const titleInput = screen.getByLabelText('Task Title') as HTMLInputElement
 
     await userEvent.type(titleInput, 'Test Title')
@@ -48,8 +48,8 @@ describe('Add Task Modal', () => {
     })
   })
 
-  // TODO: Step 10
-  it.skip('clears the task title field when submit is clicked', async () => {
+  // TODO: Step 10. Done.
+  it('clears the task title field when submit is clicked', async () => {
     const titleInput = screen.getByLabelText('Task Title') as HTMLInputElement
 
     await userEvent.type(titleInput, 'Test Title')
@@ -58,8 +58,8 @@ describe('Add Task Modal', () => {
     expect(titleInput).toHaveValue('')
   })
 
-  // TODO: Step 11
-  it.skip("calls closeModal when the 'Cancel' button is clicked", async () => {
+  // TODO: Step 11. Done.
+  it("calls closeModal when the 'Cancel' button is clicked", async () => {
     await userEvent.click(screen.getByText('Cancel'))
 
     expect(mockCloseModal).toHaveBeenCalled()

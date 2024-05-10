@@ -6,10 +6,11 @@ type Props = {
 
 export const TaskList: React.FC<Props> = ({ tasks }) =>
 
-<>
-{
-tasks.length > 0 ?
-tasks.map(item => <TaskListItem title={item.title} date={item.date} />)
-: "No tasks have been added yet."
-}
-</>
+  <div>
+    {
+    tasks.length > 0 ?
+    tasks.map(item => <TaskListItem title={item.title} date={item.date} />)
+    : 
+    "No tasks have been added yet."
+    }
+  </div>
