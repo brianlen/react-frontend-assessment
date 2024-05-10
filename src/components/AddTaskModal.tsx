@@ -42,7 +42,6 @@ export const AddTaskModal: React.FC<Props> = ({ onSubmit, closeModal }) => {
     
 
 
-
       <button onClick={onCancelHandler}>
         Cancel
       </button>

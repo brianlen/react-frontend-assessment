@@ -7,7 +7,7 @@ import {
 } from '../utils/test-utils'
 
 describe('TaskListItem', () => {
-  // TODO: Step 3
+  // TODO: Step 3. Done.
   it('correctly renders a Task List Item', () => {
     const randomDate = makeRandomDateString()
     const randomTaskText = makeRandomTaskText()
